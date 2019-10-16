@@ -6,6 +6,6 @@ En este programa trabajaremos con recetas de cocina que involucran ingredientes 
 
 ## Desafío(s)
 
-️➡️ **Modifiquen el código provisto para evitar preguntar por el destino de la impresión en la clase AllInOnePrinter para imprimir en diferentes destinos -impresora o consola-.**
+️➡️ **Modifiquen el código provisto para aplicar el patron Creator donde sea posible.**
 
-➡️ **¿Qué patrón o principio usan para asignar esta responsabilidad? Escriban la respuesta en comentarios en el código.**
+*Pista: la clase Program crea instancias de una clase que no contiene*
