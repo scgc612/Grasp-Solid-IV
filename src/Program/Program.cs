@@ -22,6 +22,13 @@ namespace Full_GRASP_And_SOLID
 
             Recipe recipe = new Recipe();
             recipe.FinalProduct = GetProduct("Café con leche");
+
+            /// <summary>
+            /// Se saca la responsabilidad a Program de crear los objetos de tipo Step
+            /// y se le asigna a la clase Recipe de acuerdo al patrón Creator, 
+            /// se detalla en la clase Recipe
+            /// </summary>
+            /// <returns></returns>
             recipe.AddStep(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120);
             recipe.AddStep(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60);
 

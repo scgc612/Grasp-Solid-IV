@@ -15,6 +15,14 @@ namespace Full_GRASP_And_SOLID
 
         public Product FinalProduct { get; set; }
 
+        /// <summary>
+        /// Se modifica AddStep por patrón Creator para que cree instancias de Step
+        /// cuando se pretenda agregar un nuevo step en una recipe
+        /// Se le asigna la responsabilidad a la clase Recipe porque cumple una de las condiciones
+        /// de este patrón que es que la clase Recipe (Clase A) contiene objetos de la clase Step 
+        /// (Clase B) ya que contiene la lista de objetos step, siendo capaz de almacenar estos objetos
+        /// </summary>
+
         public void AddStep(Product input, double quantity, Equipment equipment, int time)
         {
             Step step = new Step(input, quantity, equipment, time);
